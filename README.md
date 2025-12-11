@@ -333,8 +333,4 @@ print(response.json())
 - **Clean APIs**: RESTful design with clear semantics
 
 
-Created as part of the AI Engineering Internship coding assignment.
 
----
-
-**Note**: This is a minimal but functional implementation focusing on clean code, clear structure, and core workflow engine capabilities. It demonstrates understanding of Python, async programming, API design, and system architecture.
