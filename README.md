@@ -143,7 +143,7 @@ curl -X POST http://localhost:8000/example/run
 
 Or use the interactive API docs at http://localhost:8000/docs
 
-## 🔧 How It Works
+##  How It Works
 
 ### 1. Define a Workflow
 
@@ -253,7 +253,7 @@ print(response.json())
 
 ##  What This Engine Supports
 
-### ✅ Implemented Features:
+###  Implemented Features:
 - **Nodes**: Python functions that transform state
 - **Edges**: Simple string or conditional dict connections
 - **State Management**: Dictionary that flows through workflow
