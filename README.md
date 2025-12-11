@@ -2,18 +2,18 @@
 
 A minimal but powerful workflow/graph engine built with FastAPI. This system allows you to define sequences of steps (nodes), connect them with edges, maintain shared state, and execute workflows with support for branching and looping.
 
-## 🚀 Features
+##  Features
 
-- ✅ **Nodes & Edges**: Define workflow steps and their connections
-- ✅ **Shared State**: State dictionary flows through the entire workflow
-- ✅ **Conditional Branching**: Route to different nodes based on state conditions
-- ✅ **Looping**: Repeat nodes until conditions are met
-- ✅ **Tool Registry**: Reusable functions that nodes can call
-- ✅ **Async Support**: Non-blocking execution with FastAPI
-- ✅ **Execution Logging**: Complete audit trail of workflow execution
-- ✅ **In-Memory Storage**: Simple but functional storage layer
+-  **Nodes & Edges**: Define workflow steps and their connections
+-  **Shared State**: State dictionary flows through the entire workflow
+-  **Conditional Branching**: Route to different nodes based on state conditions
+-  **Looping**: Repeat nodes until conditions are met
+-  **Tool Registry**: Reusable functions that nodes can call
+-  **Async Support**: Non-blocking execution with FastAPI
+-  **Execution Logging**: Complete audit trail of workflow execution
+-  **In-Memory Storage**: Simple but functional storage layer
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -31,7 +31,7 @@ A minimal but powerful workflow/graph engine built with FastAPI. This system all
 └── README.md
 ```
 
-## 🛠️ Installation
+##  Installation
 
 1. **Clone or create the project structure** as shown above
 
@@ -49,7 +49,7 @@ uvicorn app.main:app --reload
 - Interactive docs: http://localhost:8000/docs
 - API root: http://localhost:8000
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Core Endpoints
 
@@ -122,7 +122,7 @@ Get the current state of a workflow run.
 - `GET /example/code-review` - Get example workflow definition
 - `POST /example/run` - Run the example workflow immediately
 
-## 🎯 Example Workflow: Code Review Mini-Agent
+##  Example Workflow: Code Review Mini-Agent
 
 The project includes a complete code review workflow that demonstrates all features:
 
@@ -201,7 +201,7 @@ def my_custom_tool(state):
 tool_registry.register("my_tool", my_custom_tool)
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Manual Testing with curl:
 
@@ -251,7 +251,7 @@ response = requests.post(
 print(response.json())
 ```
 
-## 🎨 What This Engine Supports
+##  What This Engine Supports
 
 ### ✅ Implemented Features:
 - **Nodes**: Python functions that transform state
@@ -265,7 +265,7 @@ print(response.json())
 - **Multiple Workflows**: Create and store multiple graphs
 - **Error Handling**: Graceful error capture in state
 
-### 🚀 What Could Be Improved With More Time:
+###  What Could Be Improved With More Time:
 
 1. **Persistence Layer**: 
    - SQLite or PostgreSQL for production use
@@ -306,7 +306,7 @@ print(response.json())
    - Caching layer
    - State compression
 
-## 📖 Architecture Decisions
+##  Architecture Decisions
 
 ### Why FastAPI?
 - Modern async support
@@ -332,20 +332,6 @@ print(response.json())
 - **Extensibility**: Easy to add new tools and workflows
 - **Clean APIs**: RESTful design with clear semantics
 
-## 🤝 Contributing
-
-This is an assignment project, but the structure is designed to be extensible. Key extension points:
-
-1. Add new tools in `app/tools.py`
-2. Create new workflows in `app/workflows/`
-3. Extend storage in `app/storage.py`
-4. Add API endpoints in `app/main.py`
-
-## 📝 License
-
-This project is created for the AI Engineering Internship assignment.
-
-## 👤 Author
 
 Created as part of the AI Engineering Internship coding assignment.
 
