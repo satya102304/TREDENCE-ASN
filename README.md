@@ -1,4 +1,4 @@
-# Workflow Engine - AI Engineering Internship Assignment
+# LangGraph-Inspired Backend Agent Workflow Engine (FastAPI)
 
 A minimal but powerful workflow/graph engine built with FastAPI. This system allows you to define sequences of steps (nodes), connect them with edges, maintain shared state, and execute workflows with support for branching and looping.
 
